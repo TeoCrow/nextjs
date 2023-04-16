@@ -22,7 +22,6 @@ import { Pagination } from "swiper";
 export default function Home() {
   // const dataImage = await getImage();
   // const data = await getData();
-  console.log(process.env.REACT_IMG_URL);
   return (
     <div>
       <section>
@@ -38,31 +37,31 @@ export default function Home() {
           modules={[Pagination]}
           className="mySwiper "
         >
+          <SwiperSlide className="sm:px-10 ">
+            <Image
+              src={`http://source.unsplash.com/1000x600?computer`}
+              alt="tes"
+              width={1000}
+              height={400}
+              className="h-72 rounded-lg mb-10 shadow-lg"
+            />
+          </SwiperSlide>
           <SwiperSlide className="sm:px-10">
             <Image
               src={`http://source.unsplash.com/1000x600?computer`}
               alt="tes"
               width={1000}
               height={400}
-              className="h-72 rounded-lg   mb-10 shadow-lg"
+              className="h-72 rounded-lg mb-10 shadow-lg"
             />
           </SwiperSlide>
-          <SwiperSlide className="px-10">
+          <SwiperSlide className="sm:px-10">
             <Image
               src={`http://source.unsplash.com/1000x600?computer`}
               alt="tes"
               width={1000}
               height={400}
-              className="h-72 rounded-lg   mb-10 shadow-lg"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="px-10">
-            <Image
-              src={`http://source.unsplash.com/1000x600?computer`}
-              alt="tes"
-              width={1000}
-              height={400}
-              className="h-72 rounded-lg   mb-10 shadow-lg"
+              className="h-72 rounded-lg mb-10 shadow-lg"
             />
           </SwiperSlide>
         </Swiper>
@@ -75,6 +74,67 @@ export default function Home() {
       <section>
         <p>Silahkan Pilih Cerita yang kamu suka</p>
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 my-3">
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+              Wahyu
+            </p>
+          </div>
+
           {/* {data.stories.map((data, i) => {
             return (
               <>
