@@ -2,26 +2,25 @@
 import React from "react";
 import "./globals.css";
 import Image from "next/image";
-import Wattpad from "wattpad.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-async function getImage() {
-  let data = await fetch(
-    "https://api.themoviedb.org/3/discover/movie/?api_key=1b4d7b6fba3d6451e9943ecf9c29d612"
-  );
-  return data.json();
-}
+// async function getImage() {
+//   let data = await fetch(
+//     "https://api.themoviedb.org/3/discover/movie/?api_key=1b4d7b6fba3d6451e9943ecf9c29d612"
+//   );
+//   return data.json();
+// }
 // async function getData() {
 //   const w = new Wattpad();
 //   const data = await w.Stories.search("LAUTAN DAN DENDAM");
 //   return data;
 // }
-export default async function Home() {
-  const dataImage = await getImage();
+export default function Home() {
+  // const dataImage = await getImage();
   // const data = await getData();
   console.log(process.env.REACT_IMG_URL);
   return (
@@ -39,7 +38,7 @@ export default async function Home() {
           modules={[Pagination]}
           className="mySwiper "
         >
-          <SwiperSlide className="px-10">
+          <SwiperSlide className="sm:px-10">
             <Image
               src={`http://source.unsplash.com/1000x600?computer`}
               alt="tes"
