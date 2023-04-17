@@ -1,12 +1,15 @@
 "use client";
-
 import React, { useState } from "react";
 import * as fa from "react-icons/fa";
 import * as bs from "react-icons/bs";
 import * as bi from "react-icons/bi";
 import * as md from "react-icons/md";
+import * as hi from "react-icons/hi";
+import Image from "next/image";
+import avatar from "../../public/image/avatar.png";
+
 export default function User() {
-  const [count, setCount] = useState(0);
+  const [notif, setNotif] = useState(false);
 
   return (
     <>
@@ -17,7 +20,14 @@ export default function User() {
           <div className="grid">
             <div>
               <div className="w-60 h-52 bg-gradient-to-r from-stone-50 via-purple-50 border rounded-t-lg p-4">
-                <div className="w-16 h-16 bg-sky-400 rounded-full mb-6"></div>
+                <div className="w-16 h-16 bg-sky-400 rounded-full mb-6">
+                  <Image
+                    src={avatar}
+                    width={100}
+                    height={100}
+                    className="rounded-full"
+                  />
+                </div>
                 <p>Wahyu</p>
               </div>
               <div className="w-60 h-56 bg-gradient-to-r from-stone-50 via-purple-50 border rounded-b-lg pl-4 grid font-semibold">
@@ -106,12 +116,33 @@ export default function User() {
       </section>
 
       <section className=" md:hidden">
-        <div className="w-full h-72 bg-sky-300 absolute left-0 top-0 rounded-b-3xl p-7">
-          <div className="w-16 h-16 bg-sky-400 rounded-full mb-6"></div>
+        <div className="w-full h-72 bg-sky-300 absolute left-0 top-0 rounded-b-3xl p-7 z-20">
+          <div className="flex justify-between">
+            <div className="w-16 h-16 bg-sky-400 rounded-full mb-6">
+              <Image
+                src={avatar}
+                width={100}
+                height={100}
+                className="rounded-full"
+              />
+            </div>
+            <hi.HiOutlineBell
+              size={28}
+              className="text-white"
+              onClick={() => setNotif(!notif)}
+            />
+            <section
+              className={`bg-white rounded-xl  absolute top-16 right-5 ${
+                notif == true ? "p-3" : "h-0 overflow-auto"
+              } duration-300 shadow-md`}
+            >
+              <p>Tidak ada notifikasi</p>
+            </section>
+          </div>
           <p className="text-white">Selamat Siang</p>
           <p className="text-white font-semibold text-lg">Wahyu</p>
           <p className="text-white">Wahyuarfiansyah13@gmail.com</p>
-          <div className="w-full bg-white mt-7 rounded-2xl p-5 grid gap-y-8 font-semibold shadow-md shadow-slate-200">
+          <div className="w-full bg-white mt-7 rounded-2xl text-sm p-5 grid gap-y-8 font-semibold shadow-md shadow-slate-200">
             <div className="flex items-center justify-between">
               <div className="flex gap-3">
                 <fa.FaUserAlt className="bg-sky-400 w-8 h-8 p-2 rounded-lg text-white" />
