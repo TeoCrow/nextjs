@@ -8,6 +8,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import bg1 from "../public/image/bg1.png";
+import bg2 from "../public/image/bg2.png";
+import bg3 from "../public/image/bg3.png";
+import cover from "../public/image/cover.png";
 // async function getImage() {
 //   let data = await fetch(
 //     "https://api.themoviedb.org/3/discover/movie/?api_key=1b4d7b6fba3d6451e9943ecf9c29d612"
@@ -39,29 +43,29 @@ export default function Home() {
         >
           <SwiperSlide className="sm:px-10 ">
             <Image
-              src={`http://source.unsplash.com/1000x600?computer`}
+              src={bg1}
               alt="tes"
               width={1000}
               height={400}
-              className="h-72 rounded-lg mb-10 shadow-lg"
+              className="sm:h-72 h-52 rounded-lg mb-10 shadow-lg"
             />
           </SwiperSlide>
           <SwiperSlide className="sm:px-10">
             <Image
-              src={`http://source.unsplash.com/1000x600?computer`}
+              src={bg2}
               alt="tes"
               width={1000}
               height={400}
-              className="h-72 rounded-lg mb-10 shadow-lg"
+              className="sm:h-72 h-52 rounded-lg mb-10 shadow-lg"
             />
           </SwiperSlide>
           <SwiperSlide className="sm:px-10">
             <Image
-              src={`http://source.unsplash.com/1000x600?computer`}
+              src={bg3}
               alt="tes"
               width={1000}
               height={400}
-              className="h-72 rounded-lg mb-10 shadow-lg"
+              className="sm:h-72 h-52 rounded-lg mb-10 shadow-lg"
             />
           </SwiperSlide>
         </Swiper>
@@ -75,62 +79,182 @@ export default function Home() {
         <p>Silahkan Pilih Cerita yang kamu suka</p>
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 my-3">
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>
           <div>
-            <div className="w-full h-40 bg-gradient-to-r from-sky-300 to-violet-300 rounded-lg shadow-md"></div>
-            <p className="text-sm mt-2 font-semibold text-slate-500 text-center">
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
+              Wahyu
+            </p>
+          </div>
+          <div>
+            <Image
+              src={cover}
+              width={1000}
+              height={1080}
+              alt="cover"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm mt-2 font-semibold text-slate-500 text-center bg-white rounded-full p-1 shadow-md shadow-slate-200">
               Wahyu
             </p>
           </div>

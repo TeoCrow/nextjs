@@ -5,7 +5,7 @@ import logo from "../../public/image/T.png";
 export default function Login() {
   return (
     <section className="flex items-center justify-center w-full h-full ">
-      <div className="w-[440px] bg-red-300 py-6 px-10 rounded-3xl">
+      <div className="w-[440px] bg-white py-6 px-10 rounded-3xl shadow-md shadow-slate-200">
         <Image src={logo} width={100} height={100} className=" mx-auto" />
         <p className="font-bold text-lg text-center mb-4">Masuk Akun</p>
         <div className="font-semibold mb-5 text-sm">
