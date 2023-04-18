@@ -24,6 +24,7 @@ export default function User() {
                   <Image
                     src={avatar}
                     width={100}
+                    alt="avatar"
                     height={100}
                     className="rounded-full"
                   />
@@ -116,14 +117,15 @@ export default function User() {
       </section>
 
       <section className=" md:hidden">
-        <div className="w-full h-72 bg-sky-300 absolute left-0 top-0 rounded-b-3xl p-7 z-20">
+        <div className="w-full h-72 bg-gradient-to-b from-sky-400 to-sky-200 absolute left-0 top-0 rounded-b-3xl p-7 z-20">
           <div className="flex justify-between">
             <div className="w-16 h-16 bg-sky-400 rounded-full mb-6">
               <Image
                 src={avatar}
                 width={100}
                 height={100}
-                className="rounded-full"
+                alt="avatar"
+                className="rounded-full shadow-lg"
               />
             </div>
             <hi.HiOutlineBell
@@ -180,6 +182,7 @@ export default function User() {
             Keluar
           </button>
         </div>
+        <div className="w-full h-52 bg-gradient-to-t from-sky-100  absolute left-0 bottom-0"></div>
       </section>
     </>
   );
