@@ -5,16 +5,19 @@ import logo from "../../public/image/T.png";
 export default function Login() {
   return (
     <section className="flex items-center justify-center w-full h-full ">
-      <div className="w-[440px] bg-white py-6 px-10 rounded-3xl shadow-md shadow-slate-200">
+      <div className="md:w-[440px] w-full h-full bg-white py-6 px-10 rounded-3xl shadow-md shadow-slate-200">
         <Image src={logo} width={100} height={100} className=" mx-auto" />
         <p className="font-bold text-lg text-center mb-4">Masuk Akun</p>
         <div className="font-semibold mb-5 text-sm">
           <p className="mb-2">Alamat Email</p>
-          <input type="email" className=" p-3 rounded-md w-full" />
+          <input type="email" className=" p-3 rounded-md w-full bg-stone-50" />
         </div>
         <div className="font-semibold mb-5 text-sm">
           <p className="mb-2">Password</p>
-          <input type="password" className=" p-3 rounded-md w-full" />
+          <input
+            type="password"
+            className=" p-3 rounded-md w-full bg-stone-50"
+          />
         </div>
         <div className="flex justify-between text-sm font-semibold mb-4">
           <div>
