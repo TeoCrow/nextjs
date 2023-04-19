@@ -24,13 +24,13 @@ export default function Login() {
         <p className="font-bold text-lg text-center mb-4 ">Masuk Akun</p>
         <div className="font-semibold mb-5 text-sm">
           <p className="mb-2">Alamat Email</p>
-          <input type="email" className=" p-3 rounded-md w-full bg-stone-50" />
+          <input type="email" className=" p-3 rounded-lg w-full bg-stone-50" />
         </div>
         <div className="font-semibold mb-5 text-sm">
           <p className="mb-2">Password</p>
           <input
             type="password"
-            className=" p-3 rounded-md w-full bg-stone-50"
+            className=" p-3 rounded-lg w-full bg-stone-50"
           />
         </div>
         <div className="flex justify-between text-sm font-semibold mb-4">
